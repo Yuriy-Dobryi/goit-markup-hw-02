@@ -1,0 +1,13 @@
+/* 
+#2E2F42 - головний колір тексту, фон героя та футера
+#434455 - другорядний колір тексту
+#E7E9FC - другорядний колір фону
+#FFFFFF - білий 
+#4D5AE5 - logo 'WEB'
+#F4F4FD - logo 'STUDIO'
+#E7E9FC - footer text
+*/
+body{
+   background-color: #fff;
+   color:#2E2F42;
+}
