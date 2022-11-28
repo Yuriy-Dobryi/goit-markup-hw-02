@@ -20,7 +20,34 @@ body{
 .logo .header-studio{
    color: var(--secondary-text-color);
 }
-.site-nav .list
+.site-nav .list{
+   color: var(--secondary-text-color);
+}
+/* .contacts .list{
+   
+} */
+.hero{
+   background: var(--secondary-text-color);
+   color: var(--primary-white-color);
+   width: 1440px;
+   height: 603px;
+   text-align: center;
+}
+.hero-title{
+   font-weight: 600;
+   font-size: 56px;
+   line-height: 1;
+   text-align: center;
+   letter-spacing: 0.02em;
+}
+button{
+   width: 492px;
+   height: 120px;
+}
+.button-text{
+   background: #000;
+   color: var(--primary-white-color);
+}
 
 
 
