@@ -17,10 +17,13 @@ body{
 .logo{
    color: #4D5AE5;
 }
-.header-logo-studio,
-.section-title{
+.logo .header-studio{
    color: var(--secondary-text-color);
 }
+.site-nav .list
+
+
+
 .section-title{
    color: var(--secondary-text-color);
 }
@@ -31,7 +34,7 @@ footer{
 .footer-p{
    color: #E7E9FC;
 }
-.footer-logo-studio{
+.logo .footer-studio{
    color: #F4F4FD;
 }
 
