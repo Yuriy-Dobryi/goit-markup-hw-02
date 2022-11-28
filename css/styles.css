@@ -14,10 +14,10 @@ body{
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
 }
-.first-word{
+.logo{
    color: #4D5AE5;
 }
-header .second-word{
+.logo .header-word{
    color: var(--secondary-text-color);
 }
 
@@ -27,10 +27,10 @@ header .second-word{
 footer{
    background-color: var(--secondary-text-color);
 }
-footer p{
+.footer-p{
    color: #E7E9FC;
 }
-footer .second-word {
+.logo .footer-word {
    color: #F4F4FD;
 }
 
