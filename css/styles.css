@@ -3,28 +3,36 @@
 #2E2F42 - другорядний колір тексту, фон героя та футера
 #E7E9FC - другорядний колір фону
 #FFFFFF - білий 
-#4D5AE5 - logo 'WEB'
-#F4F4FD - logo 'STUDIO'
 #E7E9FC - footer text
 */
 :root{
    --primary-text-color: #434455;
-   --title-text-color: #2E2F42;
+   --secondary-text-color: #2E2F42;
    --primary-white-color: #fff;
 }
 body{
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
 }
-.link{
-   text-decoration: none;
-}
-.logo-web{
+.first-word{
    color: #4D5AE5;
 }
-header .logo-studio{
-   color: var(--title-text-color);
+header .second-word{
+   color: var(--secondary-text-color);
 }
-footer .logo-studio {
-   color: #4D5AE5;
+
+
+
+
+footer{
+   background-color: var(--secondary-text-color);
 }
+footer p{
+   color: #E7E9FC;
+}
+footer .second-word {
+   color: #F4F4FD;
+}
+
+/* text-decoration: none; -- для посилань*/
+/* list-style: none; -- для всіх li */
