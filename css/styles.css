@@ -17,11 +17,9 @@ body{
 .logo{
    color: #4D5AE5;
 }
-.logo .header-word{
+.header-logo-studio{
    color: var(--secondary-text-color);
 }
-
-
 
 
 footer{
@@ -30,7 +28,7 @@ footer{
 .footer-p{
    color: #E7E9FC;
 }
-.logo .footer-word {
+.footer-logo-studio{
    color: #F4F4FD;
 }
 
