@@ -17,10 +17,13 @@ body{
 .logo{
    color: #4D5AE5;
 }
-.header-logo-studio{
+.header-logo-studio,
+.section-title{
    color: var(--secondary-text-color);
 }
-
+.section-title{
+   color: var(--secondary-text-color);
+}
 
 footer{
    background-color: var(--secondary-text-color);
