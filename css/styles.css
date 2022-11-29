@@ -7,8 +7,9 @@
 */
 :root{
    --primary-text-color: #434455;
-   --primary-white-color: #fff;
    --secondary-text-color: #2E2F42;
+   --primary-white-color: #fff;
+   --primary-brand-color: #4D5AE5;
    --primary-font-weight: 400;
    --primary-font-size: 16px;
    --primary-line-height: 1.5;
@@ -29,7 +30,7 @@ body{
    list-style: none;
 }
 .logo{
-   color: #4D5AE5;
+   color: var(--primary-brand-color);
    font-weight: 800;
    font-size: 18px;
    line-height: 1.3;
@@ -42,43 +43,51 @@ body{
    color: var(--secondary-text-color);
    font-weight: 600;
 }
+.nav .link:hover{
+   color: var(--primary-text-color);
+}
+/* по макету пункти меню не мають псевдокласу 'focus', тому його і не вказував */
+.nav .link:active{
+   color: var(--primary-brand-color);
+}
 .contacts .link{
    color: var(--primary-text-color);
 }
-/* --- клас "hero" --- */
+/* клас "hero" */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
    text-align: center;
 }
-/* --- заголовок --- */
+/* заголовок */
 .hero .title{
    font-weight: 600;
    font-size: 56px;
    line-height: 1.07;
 }
-/* --- дефолтне значення кнопки -- */
+/* дефолтне значення кнопки */
 .hero .button{
-   background: #4D5AE5;
+   background: var(--primary-brand-color);
    color: var(--primary-white-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    letter-spacing: 0.04em;
    border: none;
 }
-/* --- кнопка при наведенні курсору на неї */
+/* наведення курсора на кнопку*/
 .hero .button:hover{
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+/* клік на кнопку */
 .hero .button:active{
    background-color: #404BBF;
 }
-/* --- у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати --- */
+/* у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати */
 .section .title,
 .section .item-title{
    font-weight: 600;
 }
-/* --- можна було задати спільний line-height: 1.15 але вирішив заморочитись --- */
+/* можна було задати спільний line-height: 1.15 але вирішив заморочитись */
 .section .title{
    font-size: 36px;
    line-height: 1.1;
