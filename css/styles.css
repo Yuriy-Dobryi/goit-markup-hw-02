@@ -8,7 +8,8 @@
    --primary-line-height: 1.5;
    --primary-letter-spacing: 0.02em;
 }
-/* ----------------------> */
+/* ---------------------->
+в 'body'не впевнений чи доречно так робити і чи це читабельно (очікую коментар) */
 body{
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
@@ -24,7 +25,7 @@ body{
 .list{
    list-style: none;
 }
-/* ----------------------> */
+/* ------------------->------------------->-------------------> */
 .logo{
    color: var(--primary-brand-color);
    font-weight: 800;
@@ -51,7 +52,7 @@ body{
 .contacts .link{
    color: var(--primary-text-color);
 }
-/* ---------------------->---------------------->----------------------> */
+/* ------------------->------------------->-------------------> */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
@@ -95,7 +96,7 @@ body{
    font-size: 20px;
    line-height: 1.2;
 }
-/* ---------------------->---------------------->----------------------> */
+/* ------------------->------------------->-------------------> */
 footer{
    background-color: var(--secondary-text-color);
 }
