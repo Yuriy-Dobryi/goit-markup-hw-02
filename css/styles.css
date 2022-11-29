@@ -9,13 +9,19 @@
    --primary-letter-spacing: 0.02em;
 }
 /* ----------------------> */
-body{
-   background-color: var(--primary-white-color);
+body,
+.portfolio{
    color: var(--primary-text-color);
+   background-color: var(--primary-white-color);
+   font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-weight: var(--primary-font-weight);
    font-size: var(--primary-font-size);
    line-height: var(--primary-line-height);
    letter-spacing: var(--primary-letter-spacing);
+}
+.portfolio {
+   --primary-text-color: var(--secondary-text-color);
+   --primary-font-weight: 600;
 }
 /* ----------------------> */
 .link{ 
@@ -28,6 +34,7 @@ body{
 /* загальні параметри лого */
 .logo{
    color: var(--primary-brand-color);
+   font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
    font-weight: 800;
    font-size: 18px;
    letter-spacing: 0.03em;
@@ -46,13 +53,13 @@ P.S. можна було і не заморачуватись так сильн�
 }
 /* ----------------------> */
 .nav .link{
-   color: var(--secondary-text-color);
    font-weight: 600;
+   color: var(--secondary-text-color);
 }
-.nav .link:hover{
+.nav .link:hover,
+.nav .link:focus{
    color: var(--primary-text-color);
 }
-/* по макету пункти меню не мають псевдокласу 'focus', тому його і не вказував */
 .nav .link:active{
    color: var(--primary-brand-color);
 }
@@ -60,34 +67,51 @@ P.S. можна було і не заморачуватись так сильн�
 .contacts .link{
    color: var(--primary-text-color);
 }
+.contacts .link:hover,
+.contacts .link:focus{
+   color: var(--primary-brand-color);
+}
+.portfolio .contacts .link {
+   font-weight: 400;
+}
 /* ------------->------------->-------------> */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
+   font-weight: 600;
    text-align: center;
 }
 .hero .title{
-   font-weight: 600;
    font-size: 56px;
    line-height: 1.07;
 }
 /* ---------------------->
-дефолтне значення кнопки */
+кнопка по замовчуванню */
 .hero .button{
    background: var(--primary-brand-color);
-   color: var(--primary-white-color);
+   color: var(--primary-white-color); 
+   line-height: 1.19;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border-radius: 4px;
    letter-spacing: 0.04em;
-   border: none;
+   cursor: pointer;
 }
-/* наведення курсора на кнопку*/
-.hero .button:hover{
+.hero .button:hover,
+.hero .button:focus{
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/* клік на кнопку */
 .hero .button:active{
    background-color: #404BBF;
+}
+.portfolio .radio-button .button{
+   background-color: #F4F4FD;
+   color: var(--primary-brand-color);
+   letter-spacing: 0.04em;
+   cursor: pointer;
+}
+/* кнопка у якої присутній власний атрибут 'active' в html */
+.portfolio .radio-button .button[active] {
+   background-color: var(--primary-brand-color);
+   color:var(--primary-white-color);
 }
 /* ---------------------->
  у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати */
@@ -100,9 +124,16 @@ P.S. можна було і не заморачуватись так сильн�
    font-size: 36px;
    line-height: 1.1;
 }
-.section .item-title{
+.section .item-title,
+.portfolio .section .title{
    font-size: 20px;
    line-height: 1.2;
+}
+.portfolio .type{
+   font-weight: 400;
+}
+.team{
+   background-color: #F4F4FD;
 }
 /* ------------->------------->-------------> */
 footer{
@@ -118,9 +149,4 @@ footer{
 /* ----------------------> */
 .slogan {
    color: #E7E9FC;
-}
-/* ------------->------------->-------------> */
-/* ------------->PORTFOLIO HTML>------------> */
-.body-portfolio{
-   color: var(--secondary-text-color);
 }
