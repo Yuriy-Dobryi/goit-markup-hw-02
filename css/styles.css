@@ -8,8 +8,7 @@
    --primary-line-height: 1.5;
    --primary-letter-spacing: 0.02em;
 }
-/* ---------------------->
-в 'body'не впевнений чи доречно так робити і чи це читабельно (очікую коментар) */
+/* ----------------------> */
 body{
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
@@ -25,15 +24,24 @@ body{
 .list{
    list-style: none;
 }
-/* ------------------->------------------->-------------------> */
+/* ------------->------------->-------------> */
+/* загальні параметри лого */
 .logo{
    color: var(--primary-brand-color);
    font-weight: 800;
    font-size: 18px;
-   line-height: 1.3;
    letter-spacing: 0.03em;
 }
-.logo .header-studio{
+/* параметр лого, який буде відображено тільки у шапці сторінки
+P.S. можна було і не заморачуватись так сильно,
+і зробити загальний параметр 'line-height', але вирішив спробувати зробити як у макеті, цікаво чи правильно зробив в плані селекторів?
+(очікую фідбек)*/
+.header .logo{
+   line-height: 1.3;
+}
+/* параметр другого слова логотипу, який буде відображено тільки у шапці сторінки, тому і селектор трохи складний (чи все ж таки краще зробити так як описав селектор чуть нище у коментарях?)
+.header .logo-studio { */
+.header .logo .studio{ 
    color: var(--secondary-text-color);
 }
 /* ----------------------> */
@@ -52,7 +60,7 @@ body{
 .contacts .link{
    color: var(--primary-text-color);
 }
-/* ------------------->------------------->-------------------> */
+/* ------------->------------->-------------> */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
@@ -96,15 +104,23 @@ body{
    font-size: 20px;
    line-height: 1.2;
 }
-/* ------------------->------------------->-------------------> */
+/* ------------->------------->-------------> */
 footer{
    background-color: var(--secondary-text-color);
 }
 /* ----------------------> */
-.footer-p{
-   color: #E7E9FC;
+.footer .logo{
+   line-height: 1.17;
+}
+.footer .logo .studio{
+   color: #F4F4FD;
 }
 /* ----------------------> */
-.logo .footer-studio{
-   color: #F4F4FD;
+.slogan {
+   color: #E7E9FC;
+}
+/* ------------->------------->-------------> */
+/* ------------->PORTFOLIO HTML>------------> */
+.body-portfolio{
+   color: var(--secondary-text-color);
 }
