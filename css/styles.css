@@ -45,16 +45,19 @@ body{
 .contacts .link{
    color: var(--primary-text-color);
 }
+/* --- клас "hero" --- */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
    text-align: center;
 }
+/* --- заголовок --- */
 .hero .title{
    font-weight: 600;
    font-size: 56px;
    line-height: 1.07;
 }
+/* --- дефолтне значення кнопки -- */
 .hero .button{
    background: #4D5AE5;
    color: var(--primary-white-color);
@@ -63,17 +66,26 @@ body{
    letter-spacing: 0.04em;
    border: none;
 }
+/* --- кнопка при наведенні курсору на неї */
 .hero .button:hover{
    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.hero .button:active {
-   background: #404BBF;
 }
 .hero .button:active{
    background-color: #404BBF;
 }
+/* --- у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати --- */
+.section .title,
+.section .item-title{
+   font-weight: 600;
+}
+/* --- можна було задати спільний line-height: 1.15 але вирішив заморочитись --- */
 .section .title{
-   color: var(--secondary-text-color);
+   font-size: 36px;
+   line-height: 1.1;
+}
+.section .item-title{
+   font-size: 20px;
+   line-height: 1.2;
 }
 
 footer{
