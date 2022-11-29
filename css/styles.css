@@ -48,34 +48,30 @@ body{
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
-   width: 1440px;
-   height: 603px;
    text-align: center;
 }
 .hero .title{
    font-weight: 600;
    font-size: 56px;
-   line-height: 1;
-   text-align: center; /*щоб візуально було наближено до макету, розумію що там має ще бути margin та padding */
+   line-height: 1.07;
 }
-.hero .button,
-.hero .button:hover
-.hero .button:focus{
+.hero .button{
    background: #4D5AE5;
    color: var(--primary-white-color);
-   width: 170px;
-   height: 51px;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border: none;
    border-radius: 4px;
    letter-spacing: 0.04em;
+   border: none;
+}
+.hero .button:hover{
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.hero .button:active {
+   background: #404BBF;
 }
 .hero .button:active{
    background-color: #404BBF;
 }
-
-
-
 .section .title{
    color: var(--secondary-text-color);
 }
@@ -89,6 +85,3 @@ footer{
 .logo .footer-studio{
    color: #F4F4FD;
 }
-
-/* text-decoration: none; -- для посилань*/
-/* list-style: none; -- для всіх li */
