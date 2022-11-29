@@ -1,10 +1,3 @@
-/* 
-#434455 - головний колір тексту
-#2E2F42 - другорядний колір тексту, фон героя та футера
-#E7E9FC - другорядний колір фону
-#FFFFFF - білий 
-#E7E9FC - footer text
-*/
 :root{
    --primary-text-color: #434455;
    --secondary-text-color: #2E2F42;
@@ -15,6 +8,7 @@
    --primary-line-height: 1.5;
    --primary-letter-spacing: 0.02em;
 }
+/* ----------------------> */
 body{
    background-color: var(--primary-white-color);
    color: var(--primary-text-color);
@@ -23,12 +17,14 @@ body{
    line-height: var(--primary-line-height);
    letter-spacing: var(--primary-letter-spacing);
 }
+/* ----------------------> */
 .link{ 
    text-decoration: none;
 }
 .list{
    list-style: none;
 }
+/* ----------------------> */
 .logo{
    color: var(--primary-brand-color);
    font-weight: 800;
@@ -39,6 +35,7 @@ body{
 .logo .header-studio{
    color: var(--secondary-text-color);
 }
+/* ----------------------> */
 .nav .link{
    color: var(--secondary-text-color);
    font-weight: 600;
@@ -50,22 +47,23 @@ body{
 .nav .link:active{
    color: var(--primary-brand-color);
 }
+/* ----------------------> */
 .contacts .link{
    color: var(--primary-text-color);
 }
-/* клас "hero" */
+/* ---------------------->---------------------->----------------------> */
 .hero{
    background: var(--secondary-text-color);
    color: var(--primary-white-color);
    text-align: center;
 }
-/* заголовок */
 .hero .title{
    font-weight: 600;
    font-size: 56px;
    line-height: 1.07;
 }
-/* дефолтне значення кнопки */
+/* ---------------------->
+дефолтне значення кнопки */
 .hero .button{
    background: var(--primary-brand-color);
    color: var(--primary-white-color);
@@ -82,7 +80,8 @@ body{
 .hero .button:active{
    background-color: #404BBF;
 }
-/* у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати */
+/* ---------------------->
+ у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати */
 .section .title,
 .section .item-title{
    font-weight: 600;
@@ -96,13 +95,15 @@ body{
    font-size: 20px;
    line-height: 1.2;
 }
-
+/* ---------------------->---------------------->----------------------> */
 footer{
    background-color: var(--secondary-text-color);
 }
+/* ----------------------> */
 .footer-p{
    color: #E7E9FC;
 }
+/* ----------------------> */
 .logo .footer-studio{
    color: #F4F4FD;
 }
