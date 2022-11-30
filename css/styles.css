@@ -112,17 +112,16 @@ body{
    background-color: var(--primary-brand-color);
    color:var(--primary-white-color);
 }
-.portfolio {}
 /* ----------------------> */
 .section .title,
-.section .item-title{
+.section .sub-title{
    font-weight: 500;
 }
 .section .title{
    font-size: 36px;
    line-height: 1.1;
 }
-.section .item-title,
+.section .sub-title,
 .portfolio .section .title{
    font-size: 20px;
    line-height: 1.2;
