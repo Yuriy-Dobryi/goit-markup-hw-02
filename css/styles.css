@@ -3,9 +3,7 @@
    --secondary-text-color: #2E2F42;
    --primary-white-color: #fff;
    --primary-brand-color: #4D5AE5;
-   --primary-font-weight: 400;
    --primary-font-size: 16px;
-   --primary-line-height: 1.5;
    --primary-letter-spacing: 0.02em;
 }
 /* ----------------------> */
@@ -14,14 +12,12 @@ body,
    color: var(--primary-text-color);
    background-color: var(--primary-white-color);
    font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
-   font-weight: var(--primary-font-weight);
    font-size: var(--primary-font-size);
-   line-height: var(--primary-line-height);
    letter-spacing: var(--primary-letter-spacing);
 }
 .portfolio {
-   --primary-text-color: var(--secondary-text-color);
-   --primary-font-weight: 600;
+   --primary-text-color: #2E2F42;
+   --secondary-text-color: #434455;
 }
 /* ----------------------> */
 .link{ 
@@ -71,9 +67,6 @@ P.S. можна було і не заморачуватись так сильн�
 .contacts .link:focus{
    color: var(--primary-brand-color);
 }
-.portfolio .contacts .link {
-   font-weight: 400;
-}
 /* ------------->------------->-------------> */
 .hero{
    background: var(--secondary-text-color);
@@ -113,9 +106,6 @@ P.S. можна було і не заморачуватись так сильн�
    background-color: var(--primary-brand-color);
    color:var(--primary-white-color);
 }
-.portfolio .cards .link{
-   color: ;
-}
 /* ---------------------->
  у секціях (крім класу "hero") заголовки (<h2>) та підзаголовки (<h3>) мають спільний параметр "font-weight", тому вирішив об'єднати */
 .section .title,
@@ -132,7 +122,11 @@ P.S. можна було і не заморачуватись так сильн�
    font-size: 20px;
    line-height: 1.2;
 }
-.portfolio .type{
+.portfolio .title {
+   color: var(--primary-text-color);
+}
+.portfolio .type {
+   color: var(--secondary-text-color);
    font-weight: 400;
 }
 .team{
