@@ -91,11 +91,15 @@ body{
 .radio-button .button{
    background-color: #F4F4FD;
    color: var(--primary-brand-color);
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: 500;
    letter-spacing: 0.04em;
    cursor: pointer;
 }
 /* власний атрибут 'active' в html */
-.radio-button .button[active]{
+.radio-button .button:hover,
+.radio-button .button:focus{
    background-color: var(--primary-brand-color);
    color:var(--primary-white-color);
 }
